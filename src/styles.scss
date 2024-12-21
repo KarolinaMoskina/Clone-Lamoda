@@ -1,0 +1,41 @@
+$app-background: #f9f9f9;
+$product-background: #ffffff;
+$border-color: #ddd;
+$primary-color: #007bff;
+$hover-color: lighten($primary-color, 10%);
+$font-family: 'Arial', sans-serif;
+
+body {
+  background-color: $app-background;
+  font-family: $font-family;
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  text-align: center;
+  color: $primary-color;
+  margin-bottom: 20px;
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px; 
+}
+
+.filters-container {
+  flex: 0 0 250px; 
+  margin-right: 20px; 
+}
+.product-list-container {
+  flex: 1; 
+}

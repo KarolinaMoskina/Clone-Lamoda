@@ -1,0 +1,52 @@
+@import '../../styles';
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 10px 0;
+  overflow-y: auto; 
+  max-height: 80vh; 
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.product-image {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+
+  img {
+    margin-top: 12px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.product-info {
+  padding: 16px;
+  text-align: center;
+
+  h3 {
+    margin-top: 0;
+  }
+
+  p {
+    margin-bottom: 8px;
+  }
+}
